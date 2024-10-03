@@ -1,0 +1,85 @@
+STIG ID , Command Type , Command,Comment
+V-253324 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Object Access - Removable Storage successes.
+V-253325 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Policy Change - Audit Policy Change successes.
+V-253289 , CMD ," sc query ""seclogon""",This command checks if the Secondary Logon service is disabled.
+V-253288 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Services\mrxsmb10"" /v Start",This command checks if the SMBv1 client driver is disabled.
+V-253320 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Object Access - File Share successes.
+V-253321 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Object Access - Other Object Access Events successes.
+V-253322 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Object Access - Other Object Access Events failures.
+V-253323 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Object Access - Removable Storage failures.
+V-253283 , CMD , bcdedit /enum {current},This command checks the Data Execution Prevention (DEP) configuration.
+V-253282 , PowerShell , Get-NetFirewallRule -Direction Inbound ,This command lists all enabled inbound firewall rules.
+V-253281 , PowerShell ," Get-Service -Name ""MpsSvc"" ",This command checks if the Windows Defender Firewall service is running and set to start automatically.
+V-253280 , CMD , dir /s /b %SystemDrive%*.p12 %SystemDrive%*.pfx,This command searches for certificate installation files on the system.
+V-253287 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters"" /v SMB1",This command checks if SMBv1 is disabled on the SMB server.
+V-253286 , PowerShell , Get-WindowsOptionalFeature -Online ,This command checks if SMBv1 is disabled on the system.
+V-253285 , PowerShell , Get-WindowsOptionalFeature -Online ,This command checks if PowerShell 2.0 is disabled.
+V-253284 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel"" /v DisableExceptionChainValidation",This command checks if Structured Exception Handling Overwrite Protection (SEHOP) is enabled.
+V-253396 , CMD ," reg query ""HKLM\SOFTWARE\Policies\Microsoft\Windows\Explorer"" /v NoDataExecutionPrevention",This command checks if Data Execution Prevention for Explorer is enabled.
+V-253270 , PowerShell ," Get-LocalGroupMember -Group ""Backup Operators""",This command lists members of the Backup Operators group.
+V-253376 , CMD ," reg query ""HKLM\SOFTWARE\Policies\Microsoft\Windows NT\Printers"" /v DisableHTTPPrinting",This command checks if printing over HTTP is prevented.
+V-253337 , CMD ," reg query ""HKLM\SOFTWARE\Policies\Microsoft\Windows\EventLog\Application"" /v MaxSize",This command checks the Application event log size configuration.
+V-253336 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for System - System Integrity successes.
+V-253335 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for System - System Integrity failures.
+V-253334 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for System - Security System Extension successes.
+V-253333 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for System - Security State Change successes.
+V-253332 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for System - Other System Events failures.
+V-253331 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for System - Other System Events successes.
+V-253330 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for System - IPsec Driver failures.
+V-253339 , CMD ," reg query ""HKLM\SOFTWARE\Policies\Microsoft\Windows\EventLog\System"" /v MaxSize",This command checks the System event log size configuration.
+V-253338 , CMD ," reg query ""HKLM\SOFTWARE\Policies\Microsoft\Windows\EventLog\Security"" /v MaxSize",This command checks the Security event log size configuration.
+V-253390 , CMD ," reg query ""HKLM\SOFTWARE\Policies\Microsoft\Windows\CloudContent"" /v DisableWindowsConsumerFeatures",This command checks if Microsoft consumer experiences are turned off.
+V-253326 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Policy Change - Authentication Policy Change successes.
+V-253449 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Services\LanmanWorkstation\Parameters"" /v RequireSecuritySignature",This command checks if the Windows SMB client is configured to always perform SMB packet signing.
+V-253448 , CMD ," reg query ""HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"" /v SCRemoveOption",This command checks if the Smart Card removal option is configured correctly.
+V-257770 , PowerShell , AuditPol /get /category:*,This command checks if command line process auditing events are enabled for failures.
+V-253441 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters"" /v DisablePasswordChange",This command checks if the computer account password is allowed to be reset.
+V-253440 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters"" /v SignSecureChannel",This command checks if outgoing secure channel traffic is signed.
+V-253443 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters"" /v RequireStrongKey",This command checks if the system is configured to require a strong session key.
+V-253442 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters"" /v MaximumPasswordAge",This command checks the maximum age for machine account passwords.
+V-253445 , CMD ," reg query ""HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"" /v LegalNoticeText",This command checks if the required legal notice is configured.
+V-253444 , CMD ," reg query ""HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"" /v InactivityTimeoutSecs",This command checks the machine inactivity limit configuration.
+V-253447 , CMD ," reg query ""HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon"" /v CachedLogonsCount",This command checks the configuration for caching of logon credentials.
+V-253446 , CMD ," reg query ""HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"" /v LegalNoticeCaption",This command checks the Windows message title for the legal notice.
+V-253308 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Account Management - Security Group Management successes.
+V-253309 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Account Management - User Account Management failures.
+V-253302 , CMD , net accounts /minpwage,This command checks the minimum password age configuration.
+V-253303 , CMD , net accounts /minpwlen,This command checks the minimum password length configuration.
+V-253300 , CMD , net accounts /uniquepw,This command checks the password history configuration.
+V-253301 , CMD , net accounts /maxpwage,This command checks the maximum password age configuration.
+V-253306 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Account Logon - Credential Validation failures.
+V-253307 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Account Logon - Credential Validation successes.
+V-253304 , CMD , net accounts /complexity,This command checks if password complexity is enabled.
+V-253305 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Control\Lsa"" /v NoLMHash",This command checks if reversible password encryption is disabled.
+V-253415 , CMD ," reg query ""HKLM\SOFTWARE\Policies\Microsoft\Windows\PowerShell\Transcription"" /v EnableTranscripting",This command checks if PowerShell Transcription is enabled.
+V-253429 , PowerShell , Get-ChildItem -Path Cert:Localmachine\disallowed ,This command checks for the presence of DoD Interoperability Root CA cross-certificates in the Untrusted Certificates Store.
+V-253328 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Privilege Use - Sensitive Privilege Use failures.
+V-253329 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Privilege Use - Sensitive Privilege Use successes.
+V-253492 , PowerShell ," Get-LocalGroupMember -Group ""Administrators"" ",This command checks if Domain Admins or Enterprise Admins are members of the local Administrators group.
+V-253438 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters"" /v RequireSignOrSeal",This command checks if outgoing secure channel traffic is encrypted or signed.
+V-253439 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Services\Netlogon\Parameters"" /v SealSecureChannel",This command checks if outgoing secure channel traffic is encrypted.
+V-253493 , PowerShell ," Get-LocalGroupMember -Group ""Administrators"" ",This command checks if Domain Admins or Enterprise Admins are members of the local Administrators group.
+V-253434 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Control\Lsa"" /v LimitBlankPasswordUse",This command checks if local accounts with blank passwords are restricted from network access.
+V-253435 , CMD , net user Administrator,This command checks if the built-in administrator account is renamed.
+V-253436 , CMD , net user Guest,This command checks if the built-in guest account is renamed.
+V-253437 , CMD ," reg query ""HKLM\SYSTEM\CurrentControlSet\Control\Lsa"" /v SCENoApplyLegacyAuditPolicy",This command checks if audit policy using subcategories is enabled.
+V-253430 , PowerShell , Get-ChildItem -Path Cert:Localmachine\disallowed ,This command checks for the presence of US DoD CCEB Interoperability Root CA cross-certificates in the Untrusted Certificates Store.
+V-253431 , PowerShell ," Get-Acl HKLM:\SECURITY, HKLM:\SOFTWARE, HKLM:\SYSTEM ",This command checks the permissions for the HKEY_LOCAL_MACHINE registry hive.
+V-253432 , CMD , net user Administrator ,This command checks if the built-in administrator account is disabled.
+V-253433 , CMD , net user Guest ,This command checks if the built-in guest account is disabled.
+V-253498 , PowerShell ," Get-LocalGroupMember -Group ""Administrators"" ","This command checks if any accounts other than Administrators and service accounts have the ""Impersonate a client after authentication"" user right."
+V-253499 , PowerShell ," Get-LocalGroupMember -Group ""Administrators""","This command checks if only the Administrators group has the ""Load and unload device drivers"" user right."
+V-253319 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Object Access - File Share failures.
+V-253318 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Logon/Logoff - Special Logon successes.
+V-253258 , PowerShell , Get-MpComputerStatus,"This command checks the status of Windows Defender, which is typically used for ESS."
+V-253315 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Logon/Logoff - Logoff successes.
+V-253314 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Logon/Logoff - Group Membership successes.
+V-253317 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Logon/Logoff - Logon successes.
+V-253491 , PowerShell ," Get-LocalGroupMember -Group ""Administrators"" ","This command checks if Domain Admins, Enterprise Admins, or local accounts are members of the local Administrators group."
+V-253311 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Detailed Tracking - PNP Activity successes.
+V-253310 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Account Management - User Account Management successes.
+V-253313 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Logon/Logoff - Account Lockout failures.
+V-253312 , PowerShell , AuditPol /get /category:*,This command checks the audit policy configuration for Detailed Tracking - Process Creation successes.
+V-253494 , PowerShell ," Get-LocalGroupMember -Group ""Administrators"" ",This command checks if Domain Admins or Enterprise Admins are members of the local Administrators group.
+V-253495 , PowerShell ," Get-LocalGroupMember -Group ""Administrators"" ","This command checks if Domain Admins, Enterprise Admins, or local accounts are members of the local Administrators group."
+V-253298 , CMD , net accounts /lockoutthreshold,This command checks the account lock
